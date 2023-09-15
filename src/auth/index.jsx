@@ -1,5 +1,6 @@
 //baseon localStorage
 //login
+import { toast } from "react-toastify";
 
 export const login = (data,next) => {
   localStorage.setItem("data", JSON.stringify(data));
@@ -16,9 +17,23 @@ export const login = (data,next) => {
 window.addEventListener('load',clearStorage)
 //logout
 export const logout = (next) => {
-  localStorage.removeItem("data");
-  next()
-};
+  let res = window.confirm("Are you sure to logout ?")
+  if(res)
+  {
+    localStorage.removeItem("data").then(data=>{
+      toast.success("product Delete Successfully")
+      next()
+   }).catch(error=>{
+    toast.error("logout erreur")
+   })
+  }
+  else{
+    toast.warning("you cancel the operation ...")
+  }
+  }
+ 
+ 
+
 
 //checkLogin
 export const checkLogin = () => {
