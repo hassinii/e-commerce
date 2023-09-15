@@ -1,6 +1,8 @@
 //baseon localStorage
 //login
 import { toast } from "react-toastify";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 export const login = (data,next) => {
   localStorage.setItem("data", JSON.stringify(data));

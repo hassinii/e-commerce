@@ -47,10 +47,11 @@ function CustomNavbar(value) {
                 Contact us
               </DropdownToggle>
               <DropdownMenu right>
-                <NavLink tag={ReactLink} to="https://www.facebook.com/mehdi.elhajbi.39"><DropdownItem >FaceBook</DropdownItem></NavLink>
+                <a  href="https://www.facebook.com/mehdi.elhajbi.39"><DropdownItem >FaceBook</DropdownItem></a>
                 <DropdownItem>WhatApps</DropdownItem>
                 <DropdownItem divider />
-                <DropdownItem>Instgram</DropdownItem>
+                <a  href="https://www.instagram.com/mehdi.hajbi/"><DropdownItem >Instgram</DropdownItem></a>
+                
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
