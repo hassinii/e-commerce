@@ -21,7 +21,7 @@ export const logout = (next) => {
   if(res)
   {
     localStorage.removeItem("data").then(data=>{
-      toast.success("product Delete Successfully")
+      toast.success("logout success")
       next()
    }).catch(error=>{
     toast.error("logout erreur")
