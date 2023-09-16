@@ -61,7 +61,7 @@ function Login() {
                     }>
                           <Card className='shadow-sm mt-1'>
                                   <CardBody>
-                                      {JSON.stringify(loginData)}
+                                    
                                               <h3>Login Here</h3>
                                                     <Form onSubmit={loginFormSubmit}>
                                                             <div className='my-3'>

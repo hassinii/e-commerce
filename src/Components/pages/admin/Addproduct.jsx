@@ -54,7 +54,7 @@ function Addproduct(){
                 <Col md="11"  >
                     <h3 className="text-center" style={{color:"Blue"}}> Add New Product </h3> 
                     <Form onSubmit={addProductFormSubmit}>
-                        {JSON.stringify(product)}
+                       
                         <FormGroup>
                             <Label for={'productName'}><h5><b>Product Name</b></h5></Label>
                             <Input id={'productName'} placeholder="Enter Product Name Here" type={'text'} onChange={event => setProduct({...product,productName:event.target.value})} value={product.productName} ></Input>

@@ -16,7 +16,7 @@ return(
         <Container>
             <Card color="light">
                 <CardBody >
-                    {JSON.stringify(cat)}
+                    
                     <CardText className="text-center">
                     <label><b><h3>Add Category</h3> </b></label>
                     </CardText>

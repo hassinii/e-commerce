@@ -143,7 +143,7 @@ function AdminViewproduct(){
     const produtcTableHtml=()=>{
         return(
             <Row>
-              {JSON.stringify(search)}
+              
             <Col md={20}>
                     <FormGroup > 
                       
