@@ -41,7 +41,7 @@ const navigate=useNavigate()
             {product.category.title}
             </span>
         </CardText>
-        <CardText><h5>Prix : MAD  {product.productPrize}</h5></CardText>
+        <CardText><h5>Prix :  {product.productPrize} MAD </h5></CardText>
         <Container className='text-'>
             <Button tag={Link} to={'/viewproduct/'+product.productId}  size='sm' className='my-3' color='success' >View Product</Button>
          

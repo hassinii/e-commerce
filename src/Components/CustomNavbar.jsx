@@ -59,7 +59,7 @@ function CustomNavbar(value) {
           <Nav Navbar>
           <NavItem>
           <NavLink tag={ReactLink} to="/user/cart">
-               <b>Cart({value1.cart.iteam.length})</b> 
+             
               </NavLink>
               </NavItem>
              
